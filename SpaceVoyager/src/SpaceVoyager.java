@@ -18,7 +18,7 @@ public class SpaceVoyager extends StateBasedGame{
 		super(name);
 		this.addState(new Menu(menu));
 		this.addState(new Map(worldMap));
-		this.addState(new Map(natune));
+//		this.addState(new Map(natune));
 //		this.addState(new Map(duruta));
 //		this.addState(new Map(zutania));
 	}
@@ -39,7 +39,7 @@ public class SpaceVoyager extends StateBasedGame{
 	public void initStatesList(GameContainer arg0) throws SlickException {
 		this.getState(menu).init(arg0, this);
 		this.getState(worldMap).init(arg0, this);
-		this.getState(natune).init(arg0, this);
+//		this.getState(natune).init(arg0, this);
 //		this.getState(duruta).init(arg0, this);
 //		this.getState(zutania).init(arg0, this);
 		this.enterState(menu);

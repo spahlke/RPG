@@ -29,9 +29,9 @@ public class Menu extends BasicGameState{
 		spaceship = spaceship.getScaledCopy((float).10);
 		eShip = new Image("resources/spaceship.png");
 		eShip = eShip.getScaledCopy((float).25);
-		p = new Player("Hero", spaceship, shipX, shipY, 100, 10, 10, 1, 0);
-		e = new Enemy("Starship", eShip, 100, 100, 100, 1, 1, true, 10);
-		c = new Controller(window, p);
+		//p = new Player("Hero", spaceship, shipX, shipY, 100, 10, 10, 1, 0);
+		//e = new Enemy("Starship", eShip, 100, 100, 100, 1, 1, true, 10);
+		//c = new Controller(window, p);
 	}
 
 	@Override
@@ -41,8 +41,9 @@ public class Menu extends BasicGameState{
 		g.drawImage(menuBackground, 0, 0);
 		g.drawString(mouse, 100, 100);
 		g.drawRect(230, 65, 150, 40);
-		g.drawImage(p.sprite, p.xCoord, p.yCoord);
-		g.drawImage(e.sprite, 100, 100);
+		g.drawRect(235, 145, 150, 35);
+		//g.drawImage(p.sprite, p.xCoord, p.yCoord);
+		//g.drawImage(e.sprite, 100, 100);
 	}
 
 	@Override
@@ -63,7 +64,7 @@ public class Menu extends BasicGameState{
 //			shipX += 5;
 //		}
 		
-		c.move();
+		//c.move();
 		//select new game
 		if((mouseX > 230 && mouseX < 380) && (mouseY < 410  && mouseY > 370)){
 			if(input.isMouseButtonDown(0)){

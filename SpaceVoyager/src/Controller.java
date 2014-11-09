@@ -12,13 +12,13 @@ public class Controller {
 	}
 	
 	public void move(){
-		if(input.isKeyDown(Input.KEY_W)){
+		if(input.isKeyDown(Input.KEY_W) && player.yCoord > -10){
 			player.yCoord -= 5;
-		}if(input.isKeyDown(Input.KEY_A)){
+		}if(input.isKeyDown(Input.KEY_A) && player.xCoord > 0){
 			player.xCoord -= 5;
-		}if(input.isKeyDown(Input.KEY_S)){
+		}if(input.isKeyDown(Input.KEY_S) && player.yCoord < 395){
 			player.yCoord += 5;
-		}if(input.isKeyDown(Input.KEY_D)){
+		}if(input.isKeyDown(Input.KEY_D) && player.xCoord < 495){
 			player.xCoord += 5;
 		}
 	}
